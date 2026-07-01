@@ -15,47 +15,47 @@ interface RankingItem {
 
 const RANKINGS: RankingItem[] = [
   {
-    id: "careers360",
-    rank: "Rated AAA in Uttar Pradesh",
-    title: "Among Private Law Colleges",
-    description: "Recognized for academic excellence and quality legal education.",
-    source: "Careers360 Law Rankings",
+    id: "csr-2026",
+    rank: "Ranked #1 in India",
+    title: "Top Distinguished Law School",
+    description: "Recognized in the Competition Success Review (CSR) Law Survey 2026 for excellence in legal education.",
+    source: "CSR Law School Survey 2026",
     badgeColor: "bg-emerald-50 border-emerald-200/50 text-[#116446]",
     accentColor: "text-[#116446] group-hover:text-emerald-800",
     bgGradient: "group-hover:border-emerald-500/30 group-hover:shadow-[0_20px_40px_-15px_rgba(16,185,129,0.08)]",
     icon: ShieldCheck,
   },
   {
-    id: "ghrdc",
+    id: "ghrdc-2025",
     rank: "Ranked #1 in India",
-    title: "Outstanding Law School of Excellence",
-    description: "Recognized for excellence in legal education, research, and academic standards.",
-    source: "GHRDC Law School Survey",
+    title: "GHRDC All India Ranking 2025",
+    description: "Recognized among India's leading law schools for academic quality and legal education.",
+    source: "GHRDC Law School Survey 2025",
     badgeColor: "bg-amber-50 border-amber-200/50 text-amber-800",
     accentColor: "text-amber-600 group-hover:text-amber-800",
-    bgGradient: "group-hover:border-amber-500/30 group-hover:shadow-[0_20px_40px_-15px_rgba(245,158,11,0.08)]",
+    bgGradient: "group-hover:border-emerald-500/30 group-hover:shadow-[0_20px_40px_-15px_rgba(245,158,11,0.08)]",
     icon: Award,
   },
   {
-    id: "the-week",
-    rank: "Ranked #42 in India",
-    title: "Among Top Law Colleges",
-    description: "Acknowledged for quality legal education and academic performance.",
-    source: "The Week Law College Survey",
+    id: "csr-2025",
+    rank: "Ranked #3 in India",
+    title: "CSR Law Schools Ranking 2025",
+    description: "Acknowledged for excellence in legal education, faculty, and academic standards.",
+    source: "CSR Law Schools Survey 2025",
     badgeColor: "bg-blue-50 border-blue-200/50 text-blue-800",
     accentColor: "text-blue-600 group-hover:text-blue-800",
-    bgGradient: "group-hover:border-blue-500/30 group-hover:shadow-[0_20px_40px_-15px_rgba(59,130,246,0.08)]",
+    bgGradient: "group-hover:border-emerald-500/30 group-hover:shadow-[0_20px_40px_-15px_rgba(59,130,246,0.08)]",
     icon: Star,
   },
   {
-    id: "csr",
-    rank: "Highly Ranked in India",
-    title: "Top Distinguished Law School",
-    description: "Recognized for excellence in legal education and professional development.",
-    source: "Competition Success Review (CSR)",
+    id: "ghrdc-state-2025",
+    rank: "Ranked #3 in Uttar Pradesh",
+    title: "GHRDC State Ranking 2025",
+    description: "Recognized among the leading law schools in Uttar Pradesh for quality legal education.",
+    source: "GHRDC Law School Survey 2025",
     badgeColor: "bg-purple-50 border-purple-200/50 text-purple-800",
     accentColor: "text-purple-600 group-hover:text-purple-800",
-    bgGradient: "group-hover:border-purple-500/30 group-hover:shadow-[0_20px_40px_-15px_rgba(147,51,234,0.08)]",
+    bgGradient: "group-hover:border-emerald-500/30 group-hover:shadow-[0_20px_40px_-15px_rgba(147,51,234,0.08)]",
     icon: Bookmark,
   },
 ];
@@ -80,7 +80,7 @@ export default function BottomCards() {
           </h2>
 
           <p className="font-ranade font-light text-zinc-600 text-xs sm:text-[13px] leading-relaxed mt-3 max-w-3xl">
-            Recognised among India's leading law schools for academic excellence, legal education, research, innovation, and student success.
+            Our School of Law is consistently recognized by leading national ranking agencies for academic excellence, legal education, research, and student outcomes.
           </p>
         </div>
 
