@@ -24,7 +24,7 @@ export default function ScholarshipsSection() {
       highlightLabel: "On Tuition Fee",
       highlightBg: "from-emerald-50 to-emerald-100/30 border-emerald-100 text-emerald-800",
       table: {
-        headers: ["Marks in Qualifying Exam", "Tuition Fee Scholarship"],
+        headers: ["Marks in Qualifying Exam", "Scholarship on Tuition Fee"],
         rows: [
           ["75% – 80%", "25% Scholarship"],
           ["81% – 90%", "50% Scholarship"],
@@ -54,7 +54,7 @@ export default function ScholarshipsSection() {
       highlightLabel: "On First-Year Tuition",
       highlightBg: "from-amber-50 to-amber-100/30 border-amber-100 text-amber-855",
       table: {
-        headers: ["SUNET Score Range", "Tuition Fee Scholarship"],
+        headers: ["SUNET Score Range", "Scholarship on Tuition Fee"],
         rows: [
           ["75% – 84%", "20% Scholarship"],
           ["85% – 94%", "30% Scholarship"],
@@ -108,7 +108,7 @@ export default function ScholarshipsSection() {
       highlightLabel: "Based on Level",
       highlightBg: "from-blue-50 to-blue-100/30 border-blue-100 text-blue-800",
       table: {
-        headers: ["Level of Achievement", "Tuition Fee Scholarship"],
+        headers: ["Level of Achievement", "Scholarship on Tuition Fee"],
         rows: [
           ["State Level", "20% Scholarship"],
           ["National Level", "30% Scholarship"],
