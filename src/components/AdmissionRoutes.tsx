@@ -32,14 +32,9 @@ export default function AdmissionRoutes({ onApply }: AdmissionRoutesProps) {
       title: "National Score Route",
       subtitle: "Recognised National-Level Entrance Scores Accepted, Wherever Applicable",
       bullets: [
-        "Common University Entrance Test (CUET)",
-        "Joint Entrance Examination (JEE Main)",
-        "Common Admission Test (CAT)",
-        "Management Aptitude Test (MAT)",
         "Common Law Admission Test (CLAT)",
         "Law School Admission Test (LSAT)",
-        "Common Management Admission Test (CMAT)",
-        "Graduate Aptitude Test in Engineering (GATE)",
+        "Common University Entrance Test (CUET)",
         "Other recognised programme-relevant scores"
       ],
       description: "",

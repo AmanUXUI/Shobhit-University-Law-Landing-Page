@@ -8,7 +8,8 @@ import {
   GraduationCap,
   Clock,
   ArrowRight,
-  CheckCircle2
+  CheckCircle2,
+  Globe
 } from "lucide-react";
 import { motion } from "motion/react";
 
@@ -34,8 +35,6 @@ interface Category {
 }
 
 export default function ProgramsSection({ onApply }: ProgramsSectionProps) {
-  const [activeTab, setActiveTab] = useState<string>("all");
-
   const categories = useMemo<Category[]>(() => [
     {
       id: "ug",
@@ -66,6 +65,14 @@ export default function ProgramsSection({ onApply }: ProgramsSectionProps) {
           icon: Landmark,
           color: "from-amber-500/10 to-amber-600/5 text-amber-700 border-amber-200/40",
           highlights: ["Financial Regulation", "Corporate Taxation", "Commercial Agreements"]
+        },
+        {
+          title: "B.A. (Hons.) Public Administration",
+          duration: "4 Years",
+          description: "Develop an understanding of governance, public policy, administration, and political systems through an interdisciplinary curriculum.",
+          icon: Globe,
+          color: "from-indigo-500/10 to-indigo-600/5 text-indigo-700 border-indigo-200/40",
+          highlights: ["Public Administration", "Public Policy & Governance", "Constitutional & Administrative Studies"]
         }
       ]
     },
@@ -97,7 +104,7 @@ export default function ProgramsSection({ onApply }: ProgramsSectionProps) {
           description: "Enhance your legal knowledge through advanced specialisations, contemporary legal research, and interdisciplinary learning.",
           icon: Award,
           color: "from-rose-500/10 to-rose-600/5 text-rose-700 border-rose-200/40",
-          highlights: ["Contemporary Specializations", "Advanced Legal Research", "Academic Practice"]
+          highlights: ["Constitutional and Administrative Law", "Corporate and Commercial Law", "Criminal and Security Law"]
         },
         {
           title: "LL.M.",
@@ -105,20 +112,15 @@ export default function ProgramsSection({ onApply }: ProgramsSectionProps) {
           description: "Deepen your legal knowledge through advanced coursework, research, and specialization in emerging areas of law.",
           icon: GraduationCap,
           color: "from-sky-500/10 to-sky-600/5 text-sky-700 border-sky-200/40",
-          highlights: ["Emerging Law Frontiers", "Advanced Seminars", "Thesis Dissertation"]
+          highlights: ["Corporate Law", "Criminal Law", "Constitutional Law"]
         }
       ]
     }
   ], []);
 
-  const filteredCategories = useMemo(() => {
-    if (activeTab === "all") return categories;
-    return categories.filter(cat => cat.id === activeTab);
-  }, [activeTab, categories]);
-
   const filteredPrograms = useMemo(() => {
-    return filteredCategories.flatMap(cat => cat.programs);
-  }, [filteredCategories]);
+    return categories.flatMap(cat => cat.programs);
+  }, [categories]);
 
   return (
     <section id="programs-directory" className="py-20 px-4 sm:px-6 lg:px-8 bg-zinc-50/50 border-t border-zinc-100">
@@ -144,50 +146,6 @@ export default function ProgramsSection({ onApply }: ProgramsSectionProps) {
         >
           Our Law Programmes
         </h2>
-
-        {/* Category Switcher Tabs */}
-        <div className="flex bg-zinc-100 p-1 rounded-xl border border-zinc-200/50 mb-12 overflow-x-auto max-w-full no-scrollbar">
-          <button
-            onClick={() => setActiveTab("all")}
-            className={`px-5 py-2.5 rounded-lg text-xs sm:text-sm font-excon font-medium tracking-wide transition-all duration-200 whitespace-nowrap cursor-pointer ${
-              activeTab === "all"
-                ? "bg-[#116446] text-white shadow-md"
-                : "text-zinc-600 hover:text-zinc-900"
-            }`}
-          >
-            All Programs
-          </button>
-          <button
-            onClick={() => setActiveTab("ug")}
-            className={`px-5 py-2.5 rounded-lg text-xs sm:text-sm font-excon font-medium tracking-wide transition-all duration-200 whitespace-nowrap cursor-pointer ${
-              activeTab === "ug"
-                ? "bg-[#116446] text-white shadow-md"
-                : "text-zinc-600 hover:text-zinc-900"
-            }`}
-          >
-            Undergraduate (5 Years)
-          </button>
-          <button
-            onClick={() => setActiveTab("professional")}
-            className={`px-5 py-2.5 rounded-lg text-xs sm:text-sm font-excon font-medium tracking-wide transition-all duration-200 whitespace-nowrap cursor-pointer ${
-              activeTab === "professional"
-                ? "bg-[#116446] text-white shadow-md"
-                : "text-zinc-600 hover:text-zinc-900"
-            }`}
-          >
-            Professional LL.B (3 Years)
-          </button>
-          <button
-            onClick={() => setActiveTab("pg")}
-            className={`px-5 py-2.5 rounded-lg text-xs sm:text-sm font-excon font-medium tracking-wide transition-all duration-200 whitespace-nowrap cursor-pointer ${
-              activeTab === "pg"
-                ? "bg-[#116446] text-white shadow-md"
-                : "text-zinc-600 hover:text-zinc-900"
-            }`}
-          >
-            Postgraduate LL.M
-          </button>
-        </div>
 
         {/* Flat displays in unified grid */}
         <div className="w-full max-w-6xl">
