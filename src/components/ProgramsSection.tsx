@@ -67,7 +67,7 @@ export default function ProgramsSection({ onApply }: ProgramsSectionProps) {
           highlights: ["Financial Regulation", "Corporate Taxation", "Commercial Agreements"]
         },
         {
-          title: "B.A. (Hons.) Public Administration",
+          title: "B.A. (Hons.) in Government & Administration",
           duration: "4 Years",
           description: "Develop an understanding of governance, public policy, administration, and political systems through an interdisciplinary curriculum.",
           icon: Globe,
