@@ -13,6 +13,7 @@ import TrustMarquee from "./components/TrustMarquee";
 import WhyChooseShobhit from "./components/WhyChooseShobhit";
 import ConnectivitySection from "./components/ConnectivitySection";
 import ProgramsSection from "./components/ProgramsSection";
+import PlacementGallery from "./components/PlacementGallery";
 import CareerPathways from "./components/CareerPathways";
 import AdmissionRoutes from "./components/AdmissionRoutes";
 import ScholarshipsSection from "./components/ScholarshipsSection";
@@ -120,6 +121,9 @@ contact: mail@shobhituniversity.ac.in or NH-58, Modipuram, Meerut.
 
       {/* Shobhit Institute Academic Programs Section */}
       <ProgramsSection onApply={handleApplyNow} />
+
+      {/* Placement Gallery Showcase Section */}
+      <PlacementGallery />
 
       {/* Explore Diverse Career Pathways Section */}
       <CareerPathways />

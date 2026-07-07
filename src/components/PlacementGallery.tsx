@@ -2,17 +2,18 @@ import React, { useState, useEffect, useRef } from "react";
 import { Sparkles, ArrowRight } from "lucide-react";
 
 const PLACEMENT_IMAGES = [
-  "https://www.shobhituniversity.ac.in/assets/img/placements/placement4.webp",
-  "https://www.shobhituniversity.ac.in/assets/img/placements/placement5.webp",
-  "https://www.shobhituniversity.ac.in/assets/img/placements/placement6.webp",
-  "https://www.shobhituniversity.ac.in/assets/img/placements/placement7.webp",
-  "https://www.shobhituniversity.ac.in/assets/img/placements/placement8.webp",
-  "https://www.shobhituniversity.ac.in/assets/img/placements/placement9.webp",
-  "https://www.shobhituniversity.ac.in/assets/img/placements/p7.webp",
-  "https://www.shobhituniversity.ac.in/assets/img/placements/p8.webp",
-  "https://www.shobhituniversity.ac.in/assets/img/placements/p9.webp",
-  "https://www.shobhituniversity.ac.in/assets/img/placements/p10.webp",
-  "https://www.shobhituniversity.ac.in/assets/img/placements/p11.webp"
+  "https://imgh.in/host/qx8g31",
+  "https://imgh.in/host/z7c6iv",
+  "https://imgh.in/host/3591gl",
+  "https://imgh.in/host/moa5f7",
+  "https://imgh.in/host/l3misg",
+  "https://imgh.in/host/4mnzyv",
+  "https://imgh.in/host/dtjeih",
+  "https://imgh.in/host/nkxhb0",
+  "https://imgh.in/host/ebi3rl",
+  "https://imgh.in/host/x04clc",
+  "https://imgh.in/host/djctc3",
+  "https://imgh.in/host/my3lte"
 ];
 
 export default function PlacementGallery() {
@@ -180,9 +181,9 @@ export default function PlacementGallery() {
             </h2>
             <p 
               style={{ lineHeight: "26px" }}
-              className="font-ranade font-light text-zinc-550 text-sm mt-2 max-w-xl"
+              className="font-ranade font-light text-zinc-550 text-sm mt-2 max-w-3xl"
             >
-              Celebrating outstanding corporate placements of our bright minds across premium international enterprises and pioneer domestic giants.
+              Preparing future legal professionals through internships, industry engagement, placement assistance, and opportunities with leading law firms, corporate legal teams, judicial institutions, NGOs, and public sector organizations.
             </p>
           </div>
           <div className="hidden md:flex items-center gap-2 text-[#007a55] font-ranade text-xs font-semibold uppercase tracking-wider group cursor-default">
