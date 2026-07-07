@@ -2,18 +2,18 @@ import React, { useState, useEffect, useRef } from "react";
 import { Sparkles, ArrowRight } from "lucide-react";
 
 const PLACEMENT_IMAGES = [
-  "https://imgh.in/host/qx8g31",
-  "https://imgh.in/host/z7c6iv",
-  "https://imgh.in/host/3591gl",
-  "https://imgh.in/host/moa5f7",
-  "https://imgh.in/host/l3misg",
   "https://imgh.in/host/4mnzyv",
-  "https://imgh.in/host/dtjeih",
+  "https://imgh.in/host/moa5f7",
   "https://imgh.in/host/nkxhb0",
+  "https://imgh.in/host/qx8g31",
+  "https://imgh.in/host/my3lte",
+  "https://imgh.in/host/z7c6iv",
   "https://imgh.in/host/ebi3rl",
-  "https://imgh.in/host/x04clc",
+  "https://imgh.in/host/3591gl",
   "https://imgh.in/host/djctc3",
-  "https://imgh.in/host/my3lte"
+  "https://imgh.in/host/l3misg",
+  "https://imgh.in/host/x04clc",
+  "https://imgh.in/host/dtjeih"
 ];
 
 export default function PlacementGallery() {
